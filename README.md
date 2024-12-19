@@ -14,7 +14,7 @@ font_icon_to_flutter
 Translate your CSS Font Icon to Dart for your Flutter Project.
 
 Common command:
-  font_icon_to_flutter -i iconly.css
+  font_icon_to_flutter -t iconlyio -i iconly.css -f Iconly
 
 Usage: font_icon_to_flutter <arguments>
 
