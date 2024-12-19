@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:args/args.dart';
-import 'package:font_icon_to_flutter/iconly_to_flutter.dart';
+import 'package:font_icon_to_flutter/font_icon_to_flutter.dart';
 import 'package:path/path.dart' as path;
 
 const _parserKey = 'type';
