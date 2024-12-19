@@ -7,9 +7,11 @@ font_icon_to_flutter
 
 Cli app to translate your CSS Font Icon to Dart for your Flutter Project.
 
-## Man
+## Commands
 
 ```
+> font_icon_to_flutter --help
+
 font_icon_to_flutter
 Translate your CSS Font Icon to Dart for your Flutter Project.
 
