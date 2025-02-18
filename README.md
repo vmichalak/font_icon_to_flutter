@@ -11,7 +11,7 @@ Cli app to translate your CSS Font Icon to Dart for your Flutter Project.
 ## 🧑‍💻 Install
 
 ```shell
-dart pub global activate
+dart pub global activate font_icon_to_flutter
 ```
 
 ## Commands
@@ -41,6 +41,7 @@ Global options:
 -c, --class-name=<name>                 Name of the generated class.
                                         (defaults to "FontIcon")
 -h, --[no-]help                         Show this help message and exit.
+-v, --[no-]version                      Print the tool version.
 ```
 
 ## Credits

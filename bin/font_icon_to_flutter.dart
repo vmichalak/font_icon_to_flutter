@@ -4,6 +4,8 @@ import 'package:args/args.dart';
 import 'package:font_icon_to_flutter/font_icon_to_flutter.dart';
 import 'package:path/path.dart' as path;
 
+import 'version.dart';
+
 const _parserKey = 'type';
 const _inputKey = 'input';
 const _outputKey = 'output';
@@ -11,6 +13,7 @@ const _fontFamilyKey = 'font-family';
 const _fontPackageKey = 'font-package';
 const _classNameKey = 'class-name';
 const _helpKey = 'help';
+const _versionKey = 'version';
 
 const _parserIconlyIo = 'iconlyio';
 const _parserLucide = 'lucide';
@@ -69,6 +72,17 @@ final _argParser = ArgParser()
     callback: (b) {
       if (b) {
         _printHelp();
+        exit(0);
+      }
+    },
+  )
+  ..addFlag(
+    _versionKey,
+    abbr: 'v',
+    help: 'Print the tool version.',
+    callback: (b) {
+      if (b) {
+        _printVersion();
         exit(0);
       }
     },
@@ -131,10 +145,14 @@ font_icon_to_flutter
 Translate your CSS Font Icon to Dart for your Flutter Project.
 
 Common command:
-  font_icon_to_flutter -i iconly.css
+  font_icon_to_flutter -t iconlyio -i iconly.css -f Iconly
 
 Usage: font_icon_to_flutter <arguments>
 
 Global options:''');
   print(_argParser.usage);
+}
+
+void _printVersion() {
+  print('font_icon_to_flutter $cliVersion');
 }
