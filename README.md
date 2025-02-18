@@ -1,15 +1,22 @@
 font_icon_to_flutter
 ===
 
+[![](https://img.shields.io/pub/v/font_icon_to_flutter.svg)](https://pub.dev/packages/font_icon_to_flutter)
 [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
 ---
 
 Cli app to translate your CSS Font Icon to Dart for your Flutter Project.
 
+## 🧑‍💻 Install
+
+```shell
+dart pub global activate
+```
+
 ## Commands
 
-```
+```shell
 > font_icon_to_flutter --help
 
 font_icon_to_flutter
