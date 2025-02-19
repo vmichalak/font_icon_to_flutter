@@ -16,9 +16,14 @@ class IconClassGenerator {
     final builder =
         IconClassBuilder.getBuilder(className, fontFamily, fontPackage);
 
-    parser
-        .parse(content.normalizeLineEndings())
-        .forEach(builder.addIconMapping);
+    parser.parse(content.normalizeLineEndings()).forEach((it) {
+      try {
+        builder.addIconMapping(it);
+      } on Exception catch (e) {
+        // Explicitly ignore Exception and log it.
+        print('Icon ignored because of $e');
+      }
+    });
 
     return builder.build();
   }

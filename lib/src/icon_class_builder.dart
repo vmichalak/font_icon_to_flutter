@@ -1,3 +1,5 @@
+import 'package:font_icon_to_flutter/src/exception/invalid_key_exception.dart';
+import 'package:font_icon_to_flutter/src/extension/string_start_with_extension.dart';
 import 'package:font_icon_to_flutter/src/model/icon_mapping.dart';
 
 class IconClassBuilder {
@@ -38,6 +40,9 @@ class IconClassBuilder {
       addIcon(mapping.key, mapping.codePoint);
 
   void addIcon(String key, String codePoint) {
+    if (key.startsWithDigit()) {
+      throw InvalidKeyException(key: key);
+    }
     _buffer
       ..writeln('  static const IconData $key =')
       ..write('    IconData(0x$codePoint, fontFamily: _font');
