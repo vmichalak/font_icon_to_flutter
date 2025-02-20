@@ -1,3 +1,4 @@
+import 'package:font_icon_to_flutter/src/exception/invalid_key_exception.dart';
 import 'package:font_icon_to_flutter/src/icon_class_builder.dart';
 import 'package:font_icon_to_flutter/src/model/icon_mapping.dart';
 import 'package:test/expect.dart';
@@ -23,6 +24,14 @@ class Iconly {
       final builder = IconClassBuilder.getBuilder('Iconly', 'Iconly', 'Iconly')
         ..addIconMapping(const IconMapping(key: 'youtube', codePoint: 'e000'));
       expect(builder.build(), expected);
+    });
+
+    test('generate icon class with invalid icon key', () {
+      expect(
+        () => IconClassBuilder.getBuilder('Iconly', 'Iconly', 'Iconly')
+            .addIconMapping(const IconMapping(key: '3dots', codePoint: 'e001')),
+        throwsA(predicate((e) => e is InvalidKeyException)),
+      );
     });
   });
 }
