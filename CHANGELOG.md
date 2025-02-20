@@ -1,6 +1,12 @@
+## 0.2.0
+
+  - **FEAT:** Add --version flag to show cli version
+  - **FIX:** Ignore invalid icon names (key who start with digit)
+  - **DOC:** Update README.md
+
 ## 0.1.1
 
-  - Update documentation
+  - **DOC:** Update documentation
 
 ## 0.1.0
 
