@@ -1,3 +1,7 @@
+## 0.3.0
+
+  - **FIX:** FontPackage parameter don't work
+
 ## 0.2.0
 
   - **FEAT:** Add --version flag to show cli version
