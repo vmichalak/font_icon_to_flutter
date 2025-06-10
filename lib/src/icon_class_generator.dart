@@ -39,6 +39,7 @@ class IconClassGenerator {
         content: content,
         className: className,
         fontFamily: fontFamily,
+        fontPackage: fontPackage,
       );
 
   static String fromLucide({
@@ -52,6 +53,7 @@ class IconClassGenerator {
         content: content,
         className: className,
         fontFamily: fontFamily,
+        fontPackage: fontPackage,
       );
 
   static String fromFontAwesome({
@@ -65,5 +67,6 @@ class IconClassGenerator {
         content: content,
         className: className,
         fontFamily: fontFamily,
+        fontPackage: fontPackage,
       );
 }
