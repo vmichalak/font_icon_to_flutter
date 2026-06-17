@@ -1,3 +1,7 @@
+## 0.4.0
+
+  - **FEAT:** Output icons in alphabetical order to ease diffs between generations
+
 ## 0.3.0
 
   - **FIX:** FontPackage parameter don't work

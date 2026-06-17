@@ -16,14 +16,17 @@ class IconClassGenerator {
     final builder =
         IconClassBuilder.getBuilder(className, fontFamily, fontPackage);
 
-    parser.parse(content.normalizeLineEndings()).forEach((it) {
+    final mappings = parser.parse(content.normalizeLineEndings()).toList()
+      ..sort((a, b) => a.key.compareTo(b.key));
+
+    for (final mapping in mappings) {
       try {
-        builder.addIconMapping(it);
+        builder.addIconMapping(mapping);
       } on Exception catch (e) {
         // Explicitly ignore Exception and log it.
         print('Icon ignored because of $e');
       }
-    });
+    }
 
     return builder.build();
   }
