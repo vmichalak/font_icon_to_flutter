@@ -9,6 +9,7 @@ void main() {
     test('generate icon class', () {
       const expected = '''
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 import 'package:flutter/material.dart';
 
 @staticIconProvider

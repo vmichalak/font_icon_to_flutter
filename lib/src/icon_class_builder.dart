@@ -21,6 +21,7 @@ class IconClassBuilder {
   ) {
     final buffer = StringBuffer()
       ..writeln('// GENERATED CODE - DO NOT MODIFY BY HAND')
+      ..writeln('// ignore_for_file: type=lint')
       ..writeln("import 'package:flutter/material.dart';")
       ..writeln()
       ..writeln('@staticIconProvider')
