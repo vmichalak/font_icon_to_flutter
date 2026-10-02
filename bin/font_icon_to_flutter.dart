@@ -37,7 +37,7 @@ final _argParser = ArgParser()
     abbr: 'i',
     mandatory: true,
     valueHelp: 'path',
-    help: 'Path to the input file (iconly.io css file).',
+    help: 'Path to the input file (CSS file).',
   )
   ..addOption(
     _outputKey,

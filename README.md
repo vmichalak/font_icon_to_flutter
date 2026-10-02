@@ -34,7 +34,7 @@ Global options:
           [iconlyio]                    Iconly.io CSS File
           [lucide]                      Lucide.dev static CSS File
 
--i, --input=<path> (mandatory)          Path to the input file (iconly.io css file).
+-i, --input=<path> (mandatory)          Path to the input file (CSS file).
 -o, --output=<path>                     Path to the output file (Dart class). If omitted, prints to stdout.
 -f, --font-family=<name> (mandatory)    Font family to use (as specified in your pubspec.yaml).
 -p, --font-package=<name>               Package name for the font if it part of a custom package.
