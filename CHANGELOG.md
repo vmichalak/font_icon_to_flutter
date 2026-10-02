@@ -1,3 +1,9 @@
+## 0.4.1
+
+  - **FEAT:** Add `// ignore_for_file: type=lint` to generated files so they don't trigger the consumer project's lints
+  - **CHORE:** Update dependencies to their latest versions
+  - **DOC:** Remove the iconly.io reference from the `--input` help text
+
 ## 0.4.0
 
   - **FEAT:** Output icons in alphabetical order to ease diffs between generations
