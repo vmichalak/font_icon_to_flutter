@@ -1,6 +1,5 @@
 import 'package:font_icon_to_flutter/src/model/icon_mapping.dart';
 import 'package:font_icon_to_flutter/src/parser/font_awesome_icon_parser.dart';
-import 'package:font_icon_to_flutter/src/parser/iconly_io_icon_parser.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
